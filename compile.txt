@@ -1,0 +1,7 @@
+How to compile from TS to JS
+We should write command below in the terminal or cp
+tsc name.ts (it will create the same js file or just pass the files into it)
+or
+tsc name.ts or name.js
+
+tsc name.ts -w (automatically refreshing files)
