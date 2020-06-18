@@ -1,3 +1,4 @@
+"use strict";
 // let character = 'mario'; // string
 // let age = 30; // number
 // let isBlackBelt = false; // boolean
@@ -37,4 +38,5 @@ ninja = {
     name: 'sanat',
     belt: 'purple',
     age: 22
+    // skills: [] can't be added TYPE IS VERY STRICT
 };
