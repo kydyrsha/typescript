@@ -11,10 +11,16 @@
 // const form = document.querySelector('form')!;
 //classes
 var Invoice = /** @class */ (function () {
-    function Invoice(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    // readonly client:string;
+    // private details: string;
+    // public amount: number;
+    // public user modifier, default one
+    // private has no access, only can be used inside CLASS
+    // only can read inside/outside the class
+    function Invoice(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     Invoice.prototype.format = function () {
         return this.client + " owes \u00A3$(this.amount) for $(this.details)";
@@ -27,6 +33,9 @@ console.log(invOne, invTwo);
 var invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
+invoices.forEach(function (inv) {
+    console.log(inv.client, inv.amount, inv.format());
+});
 invOne.client = 'sanat';
 invTwo.amount = 333;
 console.log(invoices);
