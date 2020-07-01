@@ -1,5 +1,16 @@
 "use strict";
 exports.__esModule = true;
+var me = {
+    name: 'Sanat',
+    age: 22,
+    speak: function (text) {
+        console.log(text);
+    },
+    spend: function (amount) {
+        console.log('I spent', amount);
+    }
+};
+console.log(me);
 var invoice_js_1 = require("./classes/invoice.js");
 var invOne = new invoice_js_1.Invoice("mario", "work on the mario website", 250);
 var invTwo = new invoice_js_1.Invoice("luigi", "work on the luigi website", 300);

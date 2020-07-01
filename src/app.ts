@@ -1,4 +1,24 @@
-import { Invoice } from './classes/invoice.js'
+//interface if we have variable like isPerson than it MUST have these properties
+interface IsPerson {
+  name: string;
+  age: number;
+  speak(a: string): void;
+  spend(a: number): number;
+}
+
+const me: IsPerson = {
+  name: 'Sanat',
+  age: 22,
+  speak(text: string): void {
+    console.log(text);
+  },
+  spend(amount: number): any {
+    console.log('I spent', amount);
+  }
+};
+
+console.log(me);
+import { Invoice } from './classes/invoice.js';
 
 
 const invOne = new Invoice (`mario`, `work on the mario website`, 250);
